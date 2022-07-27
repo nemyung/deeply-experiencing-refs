@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import { Home, CallbackRef } from "./pages";
 import { Navigation, Layout } from "./components";
-import { Home } from "./pages";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
+          <Route path="callback-ref" element={<CallbackRef />} />
         </Route>
       </Routes>
     </BrowserRouter>

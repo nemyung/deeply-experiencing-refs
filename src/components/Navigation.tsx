@@ -11,6 +11,10 @@ const ROUTES: Route[] = [
     to: "/",
     name: "DOMReference",
   },
+  {
+    to: "callback-ref",
+    name: "CallbackRef",
+  },
 ];
 
 function Navigation() {
